@@ -18,12 +18,12 @@
 
   function progressBlock(game) {
     const { done, stars, best } = Progress.summary(game.id);
-    if (best) return el('div', { className: 'progress', textContent: `🏆 Skor terbaik: ${best}` });
+    if (best) return el('div', { className: 'progress', textContent: `🏆 ${game.bestLabel || 'Skor terbaik'}: ${best}${game.bestSuffix || ''}` });
     if (!done) return null;
     const total = game.levels || done;
     const bar = el('div', { className: 'bar' }, [el('i')]);
     bar.firstChild.style.width = Math.round((done / total) * 100) + '%';
-    return el('div', { className: 'progress' }, [`${done}/${total} level · ⭐ ${stars}`, bar]);
+    return el('div', { className: 'progress' }, [`${done}/${total} ${game.unit || 'level'} · ⭐ ${stars}`, bar]);
   }
 
   function buildCard(game) {

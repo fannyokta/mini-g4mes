@@ -4,6 +4,8 @@
 //  id      nama folder di games/
 //  tags    dipakai untuk filter di landing page
 //  color   warna latar thumbnail kartu (css color, opsional)
+//  levels  jumlah level/episode (untuk progress bar), unit = nama satuannya (default 'level')
+//  bestLabel / bestSuffix  teks skor terbaik di kartu untuk game berbasis skor (opsional)
 //  status  'ready' (bisa dimainkan) atau 'soon' (placeholder)
 
 window.GAMES = [
@@ -24,6 +26,17 @@ window.GAMES = [
     tags: ['Seri Keju & Coklat', 'Arcade'],
     desc: 'Tangkap hati yang berjatuhan dan hindari bom serta brokoli. Kumpulkan 25 hati sebelum nyawamu habis!',
     color: 'var(--lavender)',
+    status: 'ready'
+  },
+  {
+    id: 'chattingan',
+    title: 'Chattingan',
+    emoji: '💬🍫',
+    tags: ['Seri Keju & Coklat', 'Chat'],
+    desc: 'Balas chat Coklat Boy dalam 3 episode: si kalem, backstreet kantor, dan versi salting. Jawabanmu menentukan ending!',
+    levels: 3,
+    unit: 'episode',
+    color: 'var(--pink)',
     status: 'ready'
   },
   {
