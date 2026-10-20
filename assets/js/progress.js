@@ -1,5 +1,5 @@
 // Penyimpanan progres per game di localStorage (dipakai game & landing page).
-// Bentuk data: { stars: { [levelIdx]: 1..3 }, total: jumlahLevel }
+// Bentuk data: { stars: { [levelIdx]: 1..3 }, total: jumlahLevel, best?: skorTerbaik }
 
 window.Progress = (function () {
   const PREFIX = 'mini-g4mes:';
@@ -20,7 +20,7 @@ window.Progress = (function () {
     const p = get(gameId);
     const done = Object.keys(p.stars).length;
     const stars = Object.values(p.stars).reduce((a, b) => a + b, 0);
-    return { done, total: p.total, stars };
+    return { done, total: p.total, stars, best: p.best || 0 };
   }
 
   return { get, set, summary };

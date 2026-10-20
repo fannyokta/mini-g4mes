@@ -11,19 +11,20 @@ window.GAMES = [
     id: 'choco-cheese',
     title: 'Keju & Coklat: Petualangan Cinta',
     emoji: '🧀🍫',
-    tags: ['Puzzle', 'Maze'],
+    tags: ['Seri Keju & Coklat', 'Puzzle', 'Maze'],
     desc: 'Tembus labirin, kumpulkan kunci, buka pintu, dan hindari hati patah. Kumpulkan 3 bintang di tiap level!',
     levels: 5,
     color: 'var(--pink)',
     status: 'ready'
   },
   {
-    id: 'soon-1',
-    title: 'Game berikutnya',
-    emoji: '🎲',
-    tags: ['Segera'],
-    desc: 'Lagi dimasak di dapur. Tunggu ya!',
-    status: 'soon'
+    id: 'melting-love',
+    title: 'Coklat & Keju: Cinta yang Meleleh',
+    emoji: '💛🧀',
+    tags: ['Seri Keju & Coklat', 'Arcade'],
+    desc: 'Tangkap hati yang berjatuhan dan hindari bom serta brokoli. Kumpulkan 25 hati sebelum nyawamu habis!',
+    color: 'var(--lavender)',
+    status: 'ready'
   },
   {
     id: 'soon-2',

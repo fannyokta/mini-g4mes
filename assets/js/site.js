@@ -17,7 +17,8 @@
   }
 
   function progressBlock(game) {
-    const { done, stars } = Progress.summary(game.id);
+    const { done, stars, best } = Progress.summary(game.id);
+    if (best) return el('div', { className: 'progress', textContent: `🏆 Skor terbaik: ${best}` });
     if (!done) return null;
     const total = game.levels || done;
     const bar = el('div', { className: 'bar' }, [el('i')]);
