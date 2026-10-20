@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keju & Coklat: Petualangan Cinta</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧀</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="back" href="../../">← Semua game</a>
+
+  <h1>🧀 Keju & Coklat: Petualangan Cinta 🍫</h1>
+  <div class="sub">Kumpulkan kunci, hindari hati patah, temukan Coklat Boy!</div>
+
+  <div class="error-banner" id="errorBanner"></div>
+
+  <div class="hud">
+    <div class="pill">🎯 Level <span id="lvlNum">1</span>/<span id="lvlTotal">5</span></div>
+    <div class="pill">👣 <span id="steps">0</span></div>
+    <div class="pill">🔑 <span id="keys">0</span>/<span id="keysNeed">0</span></div>
+    <div class="pill" id="stars">☆☆☆</div>
+  </div>
+
+  <div id="boardWrap"><div id="board"></div></div>
+
+  <div class="dialog" id="dialog">...</div>
+
+  <div class="controls">
+    <div class="spacer"></div>
+    <button data-dir="up" aria-label="Atas">▲</button>
+    <div class="spacer"></div>
+    <button data-dir="left" aria-label="Kiri">◀</button>
+    <button data-dir="down" aria-label="Bawah">▼</button>
+    <button data-dir="right" aria-label="Kanan">▶</button>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modal"></div>
+  </div>
+
+  <script src="../../assets/js/progress.js"></script>
+  <script src="levels.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

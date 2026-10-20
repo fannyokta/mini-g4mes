@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini G4mes</title>
+<meta name="description" content="Kumpulan mini games gratis yang bisa langsung dimainkan di browser. Tanpa install, tanpa daftar.">
+<meta property="og:title" content="Mini G4mes">
+<meta property="og:description" content="Kumpulan mini games gratis, langsung main di browser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">mini g4mes ♡</a>
+      <a class="link" href="#games">Games</a>
+    </nav>
+
+    <header class="hero">
+      <span class="mark" aria-hidden="true">🎀</span>
+      <h1>mini <em>g4mes</em></h1>
+      <p>Game-game kecil yang lucu buat nemenin kamu santai. Langsung main, tanpa daftar.</p>
+      <a class="btn" href="#games">Mulai main</a>
+    </header>
+
+    <main id="games" style="padding-bottom: 20px;">
+      <h2>Pilih game ♡</h2>
+      <div class="tools">
+        <input class="search" id="search" type="search" placeholder="Cari game..." aria-label="Cari game">
+        <div class="chips" id="chips" role="group" aria-label="Filter kategori"></div>
+        <button class="chip dice" id="random" type="button">🎲 Acak</button>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>Belum ada game yang cocok 🥲</p>
+    </main>
+
+    <footer>
+      <p>Dibuat dengan 💛 oleh <a href="https://github.com/fannyokta">fannyokta</a></p>
+    </footer>
+  </div>
+
+  <script src="assets/js/games.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
